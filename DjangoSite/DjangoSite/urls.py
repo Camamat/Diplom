@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from dsite.views import login, register
+from dsite.views import login, register, page
 
 app_name = 'object_detection'
 
@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('object_detection/', login),
     path('object_detection/register', register),
+    path('object_detection/page', page),
 ]
